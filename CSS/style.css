@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body {
+  border: 1 rem solid red;
+}
+
+nav ul a:hover {
+  border-bottom: 1px solid #4b555c;
+}
+
+.btn-padrao {
+  width: 100%;
+  background-color: #b74a6b;
+  min-width: 150px;
+  max-width: 200px;
+  border-color: white;
+  border-radius: 100px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.btn-padrao:hover {
+  background-color: #4b555c;
+  border-color: white;
+}
+
+header {
+  font-family: Montserrat;
+  color: #4b555c;
+  padding: 0em 10em;
+}
+
+/**************************************** BANNER *****************************/
+.banner {
+  height: 27em;
+  width: 100%;
+  padding: 0em 6em;
+  margin-bottom: 2em;
+}
+.banner img {
+  margin-top: 2.3em;
+  height: 28.5em;
+}
+.banner .carousel-caption {
+  text-align: left;
+  padding-bottom: 10rem;
+  width: 30%;
+  margin-left: -3em;
+}
+.banner #carouselBanner {
+  width: 100%;
+}
+
+/**************************************** SERVIÇOS *****************************/
+.servicos {
+  text-align: center;
+  padding-top: 3em;
+  width: 100%;
+  height: 100%;
+  padding: 0em 6em;
+  color: #4b555c;
+}
+.servicos p {
+  font-weight: bold;
+}
+.servicos .itens-servico {
+  padding: 0 3em;
+}
+.servicos img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+.servicos h3 {
+  color: #b74a6b;
+}
+.servicos a {
+  color: #4b555c;
+  text-decoration: none;
+  border-bottom: 2px solid #b74a6b;
+}
+
+/**************************************** DIFERENCIAIS *****************************/
+.diferenciais {
+  width: 100%;
+  height: 42em;
+  padding: 0em 10em;
+  font-size: 1em;
+  padding-right: 1em;
+}
+.diferenciais h3 {
+  color: #4b555c;
+}
+.diferenciais p {
+  font-size: 1em;
+}
+.diferenciais ul {
+  list-style: none;
+  line-height: 1em;
+}
+.diferenciais ul img {
+  height: 0.8em;
+  padding-right: 0.5em;
+}
+.diferenciais .linha {
+  height: 18em;
+}
+.diferenciais .img-direita {
+  height: 18em;
+}
+.diferenciais img {
+  height: 15em;
+  box-shadow: 3px 3px 3px 3px #ececec;
+  border-radius: 1em;
+}
+.diferenciais .texto-esqueda {
+  height: 16em;
+}
+.diferenciais .texto-direita {
+  height: 16em;
+  padding-right: 8em;
+}
+
+/**************************************** VIDEO *****************************/
+.video {
+  width: 100%;
+  background: url("../img/fundo-video.png");
+  color: white;
+}
+.video .video-head {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.video p {
+  font-weight: bold;
+}
+
+/**************************************** BLOG *****************************/
+.blog {
+  width: 100%;
+  height: auto;
+  padding: 0em 8em;
+}
+.blog .blog-head {
+  width: 100%;
+  text-align: center;
+}
+.blog img {
+  width: 18em;
+  height: auto;
+}
+.blog h3 {
+  font-size: 1em;
+  color: #b74a6b;
+  padding-top: 1em;
+  font-weight: bold;
+}
+.blog hr {
+  background-color: #4b555c;
+  height: 1px;
+}
+.blog a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4b555c;
+}
+.blog a:hover {
+  border-bottom: 1px solid #4b555c;
+}
+
+/**************************************** MAPA *****************************/
+.mapa {
+  width: 100%;
+  height: auto;
+}
+.mapa iframe {
+  height: 20em;
+}
+
+/**************************************** RODAPE *****************************/
+footer {
+  background: #4b555c;
+  color: white;
+  padding: 0 8em;
+}
+footer i {
+  font-size: 1em;
+  margin-left: 0.8em;
+  float: right;
+}
+footer .endereco {
+  float: left;
+}
+footer .contato {
+  width: 100%;
+}
+footer .logo-rodape img {
+  height: 2em;
+}
+footer .detalhe-rodape img {
+  float: right;
+}
+footer hr {
+  margin: 0em 4em 0em 4em;
+  background-color: #5b6970;
+  height: 0.01em;
+}
+footer .icones {
+  margin-right: 4em;
+  width: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
