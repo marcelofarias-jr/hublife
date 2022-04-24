@@ -40,7 +40,6 @@
 		</div>
 	</div>
 </section>
-
 <section class="servicos">
 	<div class="header-servicos">
 		<h2>Confira nossos serviços</h2>
@@ -73,7 +72,6 @@
 		</div>
 	</div>
 </section>
-
 <section class="diferenciais">
 	<div class="diferenciais__superior">
 		<div class="diferenciais__superior__esquerda">
@@ -103,7 +101,6 @@
 		</div>
 	</div>
 </section>
-
 <section class="video">
 	
 	<div class="video-head col-md-12">
@@ -114,7 +111,6 @@
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/8IZd1Clsp88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 </section>
-
 <section class="blog">
 	<div class="blog-head">
 		<h2>Blog</h2>
@@ -143,11 +139,9 @@
 		<button type="button" class="btn-padrao btn-primary btn ml-4 mr-4">Saiba mais</button>
 	</div>
 </section>
-
 <section>
 	<div class="mapa">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1631441596573!2d-38.482936050314756!3d-3.774657644451377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c745f7a9d9655f%3A0x256e9dac3123be7d!2sAtratis%20Digital%20%7C%20Ag%C3%AAncia%20de%20Marketing%20Digital%20e%20Inbound!5e0!3m2!1spt-BR!2sbr!4v1636120551682!5m2!1spt-BR!2sbr" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 	</div>
 </section>
-
 <?php get_footer(); ?>
