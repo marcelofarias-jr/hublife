@@ -65,6 +65,8 @@ header
         color: $cor-secundaria
         text-decoration: none
         border-bottom: 2px solid $cor-primaria
+    .item
+        margin-bottom: 2rem
 
 /**************************************** DIFERENCIAIS *****************************/
 .diferenciais
@@ -146,7 +148,7 @@ header
 footer
     background: $cor-secundaria
     color: white
-    padding: 0 8em
+    padding: 4em 2em
     i
         font-size: 1em
         margin-left: 0.8em
@@ -168,3 +170,28 @@ footer
     .icones
         margin-right: 4em
         width: auto
+
+@media (min-width: 970px)
+    .texto-esquerda
+        padding-right: 8em
+    .servicos
+        display: block
+        margin-bottom: 1rem
+
+@media (max-width: 770px)
+    .btn-top
+        font-size: 0.7em
+    header
+        padding: 0 0
+    .navbar-brand
+        display: none
+    .blog
+        padding: 0 2em
+
+@media (max-width: 580px)
+    .servicos
+        padding: 0
+    .conteudo
+        img
+            width: 100%
+        

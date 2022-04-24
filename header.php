@@ -6,13 +6,16 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/carousel-owl/owl.carousel.min.css">
+  	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/carousel-owl/owl.theme.default.min.css">
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/assets/css/style.css">
 
 	<!-- Fontes -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,12 +34,12 @@
 				<div class="container">
 					<a href="#" class="navbar-brand ">
 						<figure>
-							<img src="<?php bloginfo('template_url');?>/img/logo.png" width="142" alt="Logo">
+							<img src="<?php bloginfo('template_url');?>/assets/img/logo.png" width="142" alt="Logo">
 						</figure>
 					</a>
 
 					<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-						<img src="<?php bloginfo('template_url');?>/img/logo.png" width="142">
+						<img src="<?php bloginfo('template_url');?>/assets/img/logo.png" width="142">
 					</button>
 
 					<div class="collapse navbar-collapse" id="nav-principal">
