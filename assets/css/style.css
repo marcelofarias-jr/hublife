@@ -1,17 +1,22 @@
 @charset "UTF-8";
-body {
-  border: 1 rem solid red;
+nav {
+  font-size: 0.7rem;
+  display: flex;
 }
-
 nav ul a:hover {
   border-bottom: 1px solid #4b555c;
+}
+nav .navbar-collapse {
+  padding-left: 40%;
+  align-items: flex-end;
 }
 
 .btn-padrao {
   width: 100%;
+  height: 2rem;
   background-color: #b74a6b;
-  min-width: 150px;
-  max-width: 200px;
+  min-width: 7rem;
+  max-width: 9rem;
   border-color: white;
   border-radius: 100px;
   font-size: 0.8em;
@@ -23,46 +28,39 @@ nav ul a:hover {
 }
 
 header {
+  width: 100%;
+  height: auto;
   font-family: Montserrat;
   color: #4b555c;
-  padding: 0em 10em;
+  padding: 0 12rem;
 }
 
 /**************************************** BANNER *****************************/
 .banner {
-  height: 27em;
   width: 100%;
-  padding: 0em 6em;
-  margin-bottom: 2em;
+  height: auto;
 }
 .banner img {
-  margin-top: 2.3em;
-  height: 28.5em;
+  height: auto;
 }
 .banner .carousel-caption {
   text-align: left;
-  padding-bottom: 10rem;
   width: 30%;
-  margin-left: -3em;
+  padding-bottom: 10%;
 }
-.banner #carouselBanner {
-  width: 100%;
+.banner .carousel-indicators {
+  margin-bottom: 5rem;
 }
 
 /**************************************** SERVIÇOS *****************************/
 .servicos {
-  text-align: center;
-  padding-top: 3em;
   width: 100%;
-  height: 100%;
-  padding: 0em 6em;
+  text-align: center;
+  padding: 4rem 12rem;
   color: #4b555c;
 }
 .servicos p {
-  font-weight: bold;
-}
-.servicos .itens-servico {
-  padding: 0 3em;
+  font-size: 0.8rem;
 }
 .servicos img {
   width: 150px;
@@ -71,6 +69,8 @@ header {
   box-sizing: border-box;
 }
 .servicos h3 {
+  font-size: 0.7rem;
+  font-weight: bold;
   color: #b74a6b;
 }
 .servicos a {
@@ -78,49 +78,66 @@ header {
   text-decoration: none;
   border-bottom: 2px solid #b74a6b;
 }
-.servicos .item {
-  margin-bottom: 2rem;
+.servicos .servicos__itens {
+  padding-top: 2rem;
+  display: flex;
 }
 
 /**************************************** DIFERENCIAIS *****************************/
 .diferenciais {
   width: 100%;
-  height: 42em;
-  padding: 0em 10em;
-  font-size: 1em;
-  padding-right: 1em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 12rem;
+  margin: 4rem 0;
+  font-size: 1rem;
 }
 .diferenciais h3 {
   color: #4b555c;
 }
 .diferenciais p {
-  font-size: 1em;
+  font-size: 0.8rem;
 }
 .diferenciais ul {
   list-style: none;
-  line-height: 1em;
+  line-height: 2rem;
 }
 .diferenciais ul img {
   height: 0.8em;
   padding-right: 0.5em;
 }
-.diferenciais .linha {
-  height: 18em;
+.diferenciais .diferenciais__superior {
+  display: flex;
 }
-.diferenciais .img-direita {
-  height: 18em;
+.diferenciais .diferenciais__superior .diferenciais__superior__esquerda {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
 }
-.diferenciais img {
-  height: 15em;
+.diferenciais .diferenciais__superior .diferenciais__superior__esquerda ul {
+  padding-left: 0;
+}
+.diferenciais .diferenciais__superior .diferenciais__superior__direita {
+  width: 50%;
+}
+.diferenciais .diferenciais__inferior {
+  display: flex;
+  margin: 8rem 0;
+}
+.diferenciais .diferenciais__inferior .diferenciais__inferior__direita {
+  padding-left: 2rem;
+  width: 50%;
+}
+.diferenciais .diferenciais__inferior .diferenciais__inferior__esquerda {
+  width: 50%;
+}
+.diferenciais .diferenciais__img {
+  width: 100%;
+  height: auto;
   box-shadow: 3px 3px 3px 3px #ececec;
   border-radius: 1em;
-}
-.diferenciais .texto-esqueda {
-  height: 16em;
-}
-.diferenciais .texto-direita {
-  height: 16em;
-  padding-right: 8em;
 }
 
 /**************************************** VIDEO *****************************/
@@ -142,7 +159,7 @@ header {
 .blog {
   width: 100%;
   height: auto;
-  padding: 0em 8em;
+  padding: 4rem 12rem;
 }
 .blog .blog-head {
   width: 100%;
@@ -170,6 +187,14 @@ header {
 .blog a:hover {
   border-bottom: 1px solid #4b555c;
 }
+.blog .blog-conteudo {
+  display: flex;
+  padding-bottom: 2rem;
+}
+.blog .blog-conteudo .conteudo {
+  border-bottom: 1px solid #4b555c;
+  margin-left: 2rem;
+}
 
 /**************************************** MAPA *****************************/
 .mapa {
@@ -182,45 +207,87 @@ header {
 
 /**************************************** RODAPE *****************************/
 footer {
-  background: #4b555c;
+  display: flex;
+  flex-direction: column;
+  background-color: #4b555c;
   color: white;
-  padding: 4em 2em;
+  font-weight: 100;
+  padding: 3rem 12rem;
 }
-footer i {
-  font-size: 1em;
-  margin-left: 0.8em;
-  float: right;
-}
-footer .endereco {
-  float: left;
-}
-footer .contato {
+footer .footer__superior {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-footer .logo-rodape img {
-  height: 2em;
+footer .footer__superior i {
+  margin: 0 0.5rem;
 }
-footer .detalhe-rodape img {
-  float: right;
-}
-footer hr {
-  margin: 0em 4em 0em 4em;
-  background-color: #5b6970;
-  height: 0.01em;
-}
-footer .icones {
-  margin-right: 4em;
-  width: auto;
+footer .footer__inferior {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  padding-top: 1rem;
 }
 
-@media (min-width: 970px) {
-  .texto-esquerda {
-    padding-right: 8em;
+/**************************************** RESPONSIVIDADE *****************************/
+@media (max-width: 991px) {
+  .servicos {
+    padding: 0 6rem;
+  }
+  .servicos .servicos__itens {
+    display: block;
+  }
+  .servicos .servicos__itens .servicos__item {
+    padding-bottom: 1rem;
   }
 
-  .servicos {
+  .diferenciais {
+    padding: 0 6rem;
+    text-align: center;
+  }
+  .diferenciais img {
+    height: auto;
+  }
+  .diferenciais .diferenciais__superior {
     display: block;
-    margin-bottom: 1rem;
+  }
+  .diferenciais .diferenciais__superior .diferenciais__superior__direita {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .diferenciais .diferenciais__superior .diferenciais__superior__esquerda {
+    width: 100%;
+  }
+  .diferenciais .diferenciais__inferior {
+    display: block;
+    padding-bottom: 3rem;
+  }
+  .diferenciais .diferenciais__inferior .diferenciais__inferior__direita {
+    width: 100%;
+  }
+  .diferenciais .diferenciais__inferior .diferenciais__inferior__esquerda {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .blog {
+    margin-bottom: 2rem;
+  }
+  .blog .blog-conteudo {
+    display: block;
+    text-align: center;
+  }
+  .blog .blog-conteudo .conteudo {
+    margin-bottom: 2rem;
+  }
+
+  .banner .carousel-caption {
+    padding-bottom: 5%;
+    font-size: 0.8rem;
+  }
+  .banner .carousel-indicators {
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 770px) {
@@ -239,14 +306,43 @@ footer .icones {
   .blog {
     padding: 0 2em;
   }
+
+  .banner .carousel-caption {
+    padding-bottom: 8%;
+    font-size: 0.6rem;
+  }
+  .banner .carousel-indicators {
+    margin-bottom: 2rem;
+  }
+
+  .btn-padrao {
+    width: 100%;
+    height: 2rem;
+    min-width: 5rem;
+    max-width: 7rem;
+  }
 }
 @media (max-width: 580px) {
-  .servicos {
-    padding: 0;
+  header .btn-padrao {
+    width: 100%;
+    height: auto;
+    min-width: 2rem;
+    max-width: 4rem;
   }
 
   .conteudo img {
     width: 100%;
+  }
+
+  .banner .carousel-caption {
+    padding-bottom: 10%;
+    font-size: 0.4rem;
+  }
+  .banner .carousel-caption h3 {
+    font-size: 0.7rem;
+  }
+  .banner .carousel-indicators {
+    margin-bottom: 1.5rem;
   }
 }
 
